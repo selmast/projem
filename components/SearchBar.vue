@@ -3,13 +3,14 @@
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Logo -->
       <div class="logo">
-        <NuxtLink to="/">
+        <router-link to = "/">
           <img
               src="https://www.instreet.com.tr/pub/assets/instreet-v2/images/instreet-logo-v2-black.svg"
               alt="Logo"
               width="200"
+
           />
-        </NuxtLink>
+        </router-link>
       </div>
 
       <!-- Arama Çubuğu -->
@@ -97,8 +98,8 @@
               v-if="showLoginDropdown"
               class="dropdown-menu show position-absolute"
           >
-            <li><button class="dropdown-item">Giriş Yap</button></li>
-            <li><button class="dropdown-item">Üye Ol</button></li>
+            <li><button  class="dropdown-item"><router-link to="/login">Giriş Yap</router-link></button></li>
+            <li><button  class="dropdown-item"> <router-link to="/Register">Üye Ol</router-link></button></li>
           </ul>
         </div>
 
